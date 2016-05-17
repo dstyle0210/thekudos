@@ -1,0 +1,403 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>THEKUDOS</title>
+	<link rel="stylesheet" href="../tk_lib/notosans/notosans.css" />
+	<link rel="stylesheet" href="../tk_lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../tk_lib/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-confirm/jquery-confirm.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-swiper/css/swiper.min.css" />
+	
+	<script src="../tk_lib/jquery/jquery.min.js"></script>
+	<script src="../tk_lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../tk_lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../tk_lib/jquery-confirm/jquery-confirm.min.js"></script>
+	<script src="../tk_lib/jquery-swiper/js/swiper.jquery.min.js"></script>
+	
+	<script src="../tk_js/uploadPaneForm.js"></script><!-- 파일업로드 페이지(동인출판) -->
+	<script src="../tk_js/uploadListForm.js"></script><!-- 파일업로드 리스트(중철제본) -->
+	<script src="../tk_js/commonsLicense.js"></script><!-- 저작권(cc) UI -->
+	
+	<link rel="stylesheet" href="../tk_css/reset.css" />
+	<link rel="stylesheet" href="../tk_css/mod.css" />
+	<link rel="stylesheet" href="../tk_css/layout.css" />
+	<link rel="stylesheet" href="../tk_css/components.css" />
+	<link rel="stylesheet" href="../tk_css/page.css" />
+	<link rel="stylesheet" href="../tk_css/popup.css" />
+	
+</head>
+<body>
+<!-- 
+http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJiEuViK-jAXGAH4qvDJ7zyzck 
+-->
+<!-- http://www.grafolio.com/main.grfl -->
+<div class="wrap">
+	<!-- 로고,헤더 영역 -->
+	<header class="header">
+		<div class="inner">
+			<h1 class="logo">THEKUDOS</h1>
+			
+			<div class="gnb">
+				<div class="btn-group">
+					<a href="" class="btn btn-default">동인통판</a>
+					<a href="" class="btn btn-primary">중철제본</a>
+				</div>
+			</div>
+			<div class="login">
+				<a href="../tk_util/login.html" class="btn btn-default"><i class="fa fa-power-off"></i></a>
+			</div>
+			
+		</div>
+	</header>
+	<!-- // 로고,헤더 영역 -->
+	
+<!-- 상단베너영역 -->
+<div class="topBnrWrap">
+	<div class="topBnrSec"><a href="#"><img src="../tk_images/temp/@topBnr.gif" alt="" width="728" height="90" /></a></div>
+</div>
+<!-- // 상단베너영역 -->
+
+<!-- 정렬영역 -->
+<div class="listSortWrap">
+	<div class="inner">
+		<div class="leftSec">
+			<!-- 정렬순 -->
+		<div class="btn-group">
+		  <a href="#" class="btn btn-default">
+		    <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+		  </a>
+		</div>
+		
+			<!-- 정렬순 -->
+		<div class="btn-group">
+		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    16페이지 <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu">
+		  	
+		  		<li><a href="#">4페이지</a></li>
+		  	
+		  		<li><a href="#">8페이지</a></li>
+		  	
+		  		<li><a href="#">12페이지</a></li>
+		  	
+		  		<li><a href="#">16페이지</a></li>
+		  	
+		  		<li><a href="#">20페이지</a></li>
+		  	
+		  		<li><a href="#">24페이지</a></li>
+		  	
+		  		<li><a href="#">28페이지</a></li>
+		  	
+		  		<li><a href="#">32페이지</a></li>
+		  	
+		  		<li><a href="#">36페이지</a></li>
+		  	
+		  </ul>
+		</div>
+		
+		<!-- Single button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    4mm 재단선 <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			  	<li><a href="#">재단선 없음</a></li>
+			    
+			  		<li><a href="#">3mm 재단선</a></li>
+			  	
+			  		<li><a href="#">4mm 재단선</a></li>
+			  	
+			  		<li><a href="#">5mm 재단선</a></li>
+			  	
+			  		<li><a href="#">6mm 재단선</a></li>
+			  	
+			  		<li><a href="#">7mm 재단선</a></li>
+			  	
+			  </ul>
+			</div>
+			
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    단면표지 <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			  	<li><a href="index.html">단면표지</a></li>
+			  	<li><a href="index_double.html">양면표지</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="rightSec">
+			<a href="pageAdd.html" class="btn btn-warning"><i class="fa fa-search" aria-hidden="true"></i> 미리보기</a>
+			<a href="pageAdd.html" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF 출력</a>
+		</div>
+	</div>
+</div>
+<!-- // 정렬영역 -->
+
+
+<!-- 중철제본:타이틀 -->
+<div class="listTitleWrap">
+	<div class="inner">
+		<h2 class="h2">단면표지</h2>
+	</div>
+</div>
+<!-- // 중철제본:타이틀 -->
+
+
+
+<!-- 리스트영역 -->
+<div class="listWrap">
+	<div class="inner">
+	
+		
+	<!-- 아이템리스트영역 -->
+	<div class="itemListWrap" id="uploadCoverListWrap">
+		<div class="itemWrap">
+			<div class="itemNameSec">앞표지</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		<div class="itemWrap">
+			<div class="itemNameSec">뒷표지</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // 아이템리스트영역 -->
+	<script>
+	var bindCover = new uploadListUi("#uploadCoverListWrap",{
+		titleType:"cover", // 표지 : cover , 페이지 : page
+		bindType:"single" // 단면 : single , 양면 : double
+	});
+	// bindCover.getFiles(); ==> 파일들 목록을 리턴함.
+	</script>
+		
+	</div>
+</div>
+<!-- // 리스트영역 -->
+
+<!-- 중철제본:타이틀 -->
+<div class="listTitleWrap">
+	<div class="inner">
+		<h2 class="h2">본문내지</h2>
+	</div>
+</div>
+<!-- // 중철제본:타이틀 -->
+
+
+
+<!-- 리스트영역 -->
+<div class="listWrap">
+	<div class="inner">
+	
+		
+	<!-- 아이템리스트영역 -->
+	<div class="itemListWrap" id="uploadPageListWrap">
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">1p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">2p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">3p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">4p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">5p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">6p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">7p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">8p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">9p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">10p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">11p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">12p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">13p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">14p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">15p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemNameSec">16p</div>
+			<div class="itemSec">
+				<div class="item-upload">
+					<a href="#" class="btnUploadFile"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></a>
+					<input type="file" name="file" />
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- // 아이템리스트영역 -->
+	<script>
+	var bindSingleList = new uploadListUi("#uploadPageListWrap",{
+		titleType:"page", // 표지 : cover , 페이지 : page
+		bindType:"single" // 단면 : single , 양면 : double
+	});
+	// bindSingleList.getFiles(); ==> 파일들 목록을 리턴함.
+	</script>
+		
+	</div>
+</div>
+<!-- // 리스트영역 -->
+	
+	
+
+
+	<footer class="footer">
+		<div class="inner">
+			<div class="footBtnSec">
+				<a href="#">회사소개</a>
+				<a href="#">개인정보보호정책</a>
+				<a href="#">이용약관</a>
+				<a href="#">광고제휴</a>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*! Pakage: thekudos make by dstyle(dstyle0210@gmail.com) */
+
+/*! 풋터영역 */
+.footer{margin-top:30px;height:120px;border-top:1px solid #ccc}
+.footer .inner{position:relative;margin:0 auto;width:1100px;overflow:hidden;color:#000}
+.footer .footBtnSec{float:left;padding-top:20px}
+.footer .footBtnSec a{display:inline-block;padding:5px 20px;font-size:16px}
+
+
+
+/*! 헤더영역 */
+.header{height:80px;border-bottom:1px solid #ccc;background:#f5f5f5}
+.header .inner{position:relative;margin:0 auto;width:1100px;color:#000}
+.header .logo{position:absolute;top:15px;left:0;margin:0;padding:0;font-weight:700;font-size:28px}
+.header .gnb{padding-top:20px;text-align:center}
+.header .login{position:absolute;top:20px;right:0}
+
+
+
+/*! 리스트 정렬영역 */
+.listSortWrap{padding-bottom:20px;width:100%}
+.listSortWrap:after,.listSortWrap:before{display:table;content:"";line-height:0}
+.listSortWrap:after{clear:both}
+.listSortWrap .inner{position:relative;margin:0 auto;width:1100px}
+
+
+
+/*! 상단베너영역 */
+.topBnrWrap{padding:20px 0;text-align:center}
+.topBnrWrap .topBnrSec .swiper-container{width:728px;height:90px}

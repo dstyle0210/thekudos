@@ -1,0 +1,332 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>THEKUDOS</title>
+	<link rel="stylesheet" href="../tk_lib/notosans/notosans.css" />
+	<link rel="stylesheet" href="../tk_lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../tk_lib/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-confirm/jquery-confirm.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-swiper/css/swiper.min.css" />
+	
+	<script src="../tk_lib/jquery/jquery.min.js"></script>
+	<script src="../tk_lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../tk_lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../tk_lib/jquery-confirm/jquery-confirm.min.js"></script>
+	<script src="../tk_lib/jquery-swiper/js/swiper.jquery.min.js"></script>
+	
+	<script src="../tk_js/uploadPaneForm.js"></script><!-- 파일업로드 페이지(동인출판) -->
+	<script src="../tk_js/uploadListForm.js"></script><!-- 파일업로드 리스트(중철제본) -->
+	<script src="../tk_js/commonsLicense.js"></script><!-- 저작권(cc) UI -->
+	
+	<link rel="stylesheet" href="../tk_css/reset.css" />
+	<link rel="stylesheet" href="../tk_css/mod.css" />
+	<link rel="stylesheet" href="../tk_css/layout.css" />
+	<link rel="stylesheet" href="../tk_css/components.css" />
+	<link rel="stylesheet" href="../tk_css/page.css" />
+	<link rel="stylesheet" href="../tk_css/popup.css" />
+	
+</head>
+<body>
+<!-- 
+http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJiEuViK-jAXGAH4qvDJ7zyzck 
+-->
+<!-- http://www.grafolio.com/main.grfl -->
+<div class="wrap">
+	<!-- 로고,헤더 영역 -->
+	<header class="header">
+		<div class="inner">
+			<h1 class="logo">THEKUDOS</h1>
+			
+			<div class="gnb">
+				<div class="btn-group">
+					<a href="" class="btn btn-primary">동인통판</a>
+					<a href="" class="btn btn-default">중철제본</a>
+				</div>
+			</div>
+			<div class="login">
+				<a href="../tk_util/login.html" class="btn btn-default"><i class="fa fa-power-off"></i></a>
+			</div>
+			
+		</div>
+	</header>
+	<!-- // 로고,헤더 영역 -->
+	
+<!-- 상단베너영역 -->
+<div class="topBnrWrap">
+	<div class="topBnrSec"><a href="#"><img src="../tk_images/temp/@topBnr.gif" alt="" width="728" height="90" /></a></div>
+</div>
+<!-- // 상단베너영역 -->
+
+<!-- 정렬영역 -->
+<div class="listSortWrap">
+	<div class="inner">
+		<div class="leftSec">
+			<!-- 정렬순 -->
+		<div class="btn-group">
+		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    최신순 <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu">
+		    <li><a href="#">최신순</a></li>
+		    <li><a href="#">인기순</a></li>
+		    <li><a href="#">조회순</a></li>
+		    <li><a href="#">댓글순</a></li>
+		  </ul>
+		</div>
+		
+		<!-- Single button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    전체 <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">전체</a></li>
+			    <li><a href="#">오늘</a></li>
+			    <li><a href="#">이번주</a></li>
+			    <li><a href="#">이번달</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="rightSec">
+			<a href="pageAdd.html" class="btn btn-primary"><i class="fa fa-upload" aria-hidden="true"></i> 회지등록</a>
+		</div>
+	</div>
+</div>
+<!-- // 정렬영역 -->
+
+<!-- 리스트영역 -->
+<div class="listWrap">
+	<div class="inner">
+	
+		
+		<!-- 아이템리스트영역 -->
+	<div class="itemListWrap">
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="itemWrap">
+			<div class="itemSec">
+				<div class="item-canvas">
+					<img src="../tk_images/temp/@item.jpg" alt="" />
+					<div class="zzim">
+						<!-- 찜가능(찜 상태아님) -->
+						<button><i class="fa fa-heart-o"></i></button>
+						<!-- 찜해제(찜 상태임) -->
+						<button><i class="fa fa-heart"></i></button> 
+					</div>
+				</div>
+				
+				<div class="item-desc"> 
+					<a href="#" class="item-title">제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT제목TEXT</a>
+					<a href="#" class="item-writer">회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT회원명TEXT</a>
+					<div class="item-social">
+						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 321</a>
+						<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 321</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- // 아이템리스트영역 -->
+		
+		<div class="itemListMoreWrap">
+			<button class="btn btn-info">계속보기</button>
+		</div>
+		
+		
+	</div>
+</div>
+<!-- // 리스트영역 -->
+	
+	
+
+
+	<footer class="footer">
+		<div class="inner">
+			<div class="footBtnSec">
+				<a href="#">회사소개</a>
+				<a href="#">개인정보보호정책</a>
+				<a href="#">이용약관</a>
+				<a href="#">광고제휴</a>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+
+</body>
+</html>
+
+
