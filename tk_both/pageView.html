@@ -142,7 +142,7 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 			  </button>
 			</div>
 			<div class="reportPage">
-				<a href="#">신고하기</a>
+				<a href="#" data-toggle="modal" data-target="#reportItemModal">신고하기</a>
 			</div>
 		</div>
 		
@@ -181,12 +181,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 					
 					<!-- 댓글기능 -->
 					<div class="btnSec replyBtnSec">
-						<div class="leftSec"><a href="#">댓글달기</a></div>
-						<div class="rightSec"><a href="#">신고하기</a></div>
+						<div class="leftSec"><a href="#replyReplyWriteForm0" class="btn btn-sm" onclick="$('#replyReplyWriteForm0').show();return false;">댓글달기</a></div>
+						<div class="rightSec"><a href="#reportReplyModal" data-toggle="modal" data-target="#reportReplyModal">신고하기</a></div>
 					</div>
 					
 					<!-- 대댓글 쓰기 -->
-					<div class="replyReplyWrite">
+					<div class="replyReplyWrite" id="replyReplyWriteForm0">
 						<div class="replyWriteForm">
 							<textarea name="" id="" placeholder="댓글을 남기세요"></textarea>
 						</div>
@@ -228,12 +228,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 					
 					<!-- 댓글기능 -->
 					<div class="btnSec replyBtnSec">
-						<div class="leftSec"><a href="#">댓글달기</a></div>
-						<div class="rightSec"><a href="#">신고하기</a></div>
+						<div class="leftSec"><a href="#replyReplyWriteForm1" class="btn btn-sm" onclick="$('#replyReplyWriteForm1').show();return false;">댓글달기</a></div>
+						<div class="rightSec"><a href="#reportReplyModal" data-toggle="modal" data-target="#reportReplyModal">신고하기</a></div>
 					</div>
 					
 					<!-- 대댓글 쓰기 -->
-					<div class="replyReplyWrite">
+					<div class="replyReplyWrite" id="replyReplyWriteForm1">
 						<div class="replyWriteForm">
 							<textarea name="" id="" placeholder="댓글을 남기세요"></textarea>
 						</div>
@@ -275,12 +275,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 					
 					<!-- 댓글기능 -->
 					<div class="btnSec replyBtnSec">
-						<div class="leftSec"><a href="#">댓글달기</a></div>
-						<div class="rightSec"><a href="#">신고하기</a></div>
+						<div class="leftSec"><a href="#replyReplyWriteForm2" class="btn btn-sm" onclick="$('#replyReplyWriteForm2').show();return false;">댓글달기</a></div>
+						<div class="rightSec"><a href="#reportReplyModal" data-toggle="modal" data-target="#reportReplyModal">신고하기</a></div>
 					</div>
 					
 					<!-- 대댓글 쓰기 -->
-					<div class="replyReplyWrite">
+					<div class="replyReplyWrite" id="replyReplyWriteForm2">
 						<div class="replyWriteForm">
 							<textarea name="" id="" placeholder="댓글을 남기세요"></textarea>
 						</div>
@@ -322,12 +322,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 					
 					<!-- 댓글기능 -->
 					<div class="btnSec replyBtnSec">
-						<div class="leftSec"><a href="#">댓글달기</a></div>
-						<div class="rightSec"><a href="#">신고하기</a></div>
+						<div class="leftSec"><a href="#replyReplyWriteForm3" class="btn btn-sm" onclick="$('#replyReplyWriteForm3').show();return false;">댓글달기</a></div>
+						<div class="rightSec"><a href="#reportReplyModal" data-toggle="modal" data-target="#reportReplyModal">신고하기</a></div>
 					</div>
 					
 					<!-- 대댓글 쓰기 -->
-					<div class="replyReplyWrite">
+					<div class="replyReplyWrite" id="replyReplyWriteForm3">
 						<div class="replyWriteForm">
 							<textarea name="" id="" placeholder="댓글을 남기세요"></textarea>
 						</div>
@@ -369,12 +369,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 					
 					<!-- 댓글기능 -->
 					<div class="btnSec replyBtnSec">
-						<div class="leftSec"><a href="#">댓글달기</a></div>
-						<div class="rightSec"><a href="#">신고하기</a></div>
+						<div class="leftSec"><a href="#replyReplyWriteForm4" class="btn btn-sm" onclick="$('#replyReplyWriteForm4').show();return false;">댓글달기</a></div>
+						<div class="rightSec"><a href="#reportReplyModal" data-toggle="modal" data-target="#reportReplyModal">신고하기</a></div>
 					</div>
 					
 					<!-- 대댓글 쓰기 -->
-					<div class="replyReplyWrite">
+					<div class="replyReplyWrite" id="replyReplyWriteForm4">
 						<div class="replyWriteForm">
 							<textarea name="" id="" placeholder="댓글을 남기세요"></textarea>
 						</div>
@@ -417,6 +417,76 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 	</div>
 </div>
 <!-- // 회지등록 -->
+
+
+<!-- 아이템 신고하기 레이어 ( #reportItemModal ) -->
+<div class="modal fade custom-modal" tabindex="-1" role="dialog" id="reportItemModal">
+	<div class="vertical-alignment-helper">
+		<div class="modal-dialog vertical-align-center">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">신고하기</h4>
+				</div>
+				<div class="modal-body">
+					
+					<div class="form-group">
+						<label for="reportType">신고사항 선택</label>
+						<select class="form-control" id="reportType">
+						  <option>저작권 위반 포함</option>
+						  <option>공격적 내용 포함</option>
+						  <option>상표권 위반 포함</option>
+						  <option>성인물 포함</option>
+						  <option>개인정보 침해</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="reportDesc">신고내용</label>
+						<textarea class="form-control" rows="3" id="reportDesc"></textarea>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">신고하기</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+				</div>
+			</div> <!-- /.modal-content -->
+		</div> <!-- /.modal-dialog -->
+	</div>
+</div> <!-- /.modal -->
+<!-- // 아이템 신고하기 레이어 ( #reportItemModal ) -->
+
+<!-- 댓글 신고하기 레이어 ( #reportReplyModal ) -->
+<div class="modal fade custom-modal" tabindex="-1" role="dialog" id="reportReplyModal">
+	<div class="vertical-alignment-helper">
+		<div class="modal-dialog vertical-align-center">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">댓글 신고하기</h4>
+				</div>
+				<div class="modal-body">
+					
+					<div class="form-group">
+						<label for="reportDesc">신고내용</label>
+						<textarea class="form-control" rows="3" id="reportDesc"></textarea>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">신고하기</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+				</div>
+			</div> <!-- /.modal-content -->
+		</div> <!-- /.modal-dialog -->
+	</div>
+</div> <!-- /.modal -->
+<!-- // 댓글 신고하기 레이어 ( #reportReplyModal ) -->
+
 
 
 	<footer class="footer">
