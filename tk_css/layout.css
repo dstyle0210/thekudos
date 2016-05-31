@@ -23,6 +23,7 @@
 .listSortWrap:after,.listSortWrap:before{display:table;content:"";line-height:0}
 .listSortWrap:after{clear:both}
 .listSortWrap .inner{position:relative;margin:0 auto;width:1000px}
+.listSortWrap .inner .sortTitle{height:32px;overflow:hidden;font-weight:700;font-size:32px;color:#333;line-height:32px}
 
 
 

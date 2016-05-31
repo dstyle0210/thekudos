@@ -43,8 +43,8 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 			
 			<div class="gnb">
 				<div class="btn-group">
-					<a href="" class="btn btn-default">동인통판</a>
-					<a href="" class="btn btn-primary">중철제본</a>
+					<a href="../tk_both/index.html" class="btn btn-default">동인통판</a>
+					<a href="../tk_bind/index.html" class="btn btn-primary">중철제본</a>
 				</div>
 			</div>
 			<div class="login">
@@ -132,8 +132,8 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 			</div>
 		</div>
 		<div class="rightSec">
-			<a href="pageAdd.html" class="btn btn-warning"><i class="fa fa-search" aria-hidden="true"></i> 미리보기</a>
-			<a href="pageAdd.html" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF 출력</a>
+			<a href="preview.html" class="btn btn-warning"><i class="fa fa-search" aria-hidden="true"></i> 미리보기</a>
+			<a href="#gotoPDFModal" data-toggle="modal" data-target="#gotoPDFModal" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF 출력</a>
 		</div>
 	</div>
 </div>
@@ -398,6 +398,41 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 	</div>
 </div>
 <!-- // 리스트영역 -->
+
+
+
+
+
+<!-- PDF출력 레이어 ( #gotoPDFModal ) -->
+<div class="modal fade custom-modal" tabindex="-1" role="dialog" id="gotoPDFModal">
+	<div class="vertical-alignment-helper">
+		<div class="modal-dialog vertical-align-center">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">PDF로 출력하기</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="coverType">표지출력 선택</label>
+						<select class="form-control" id="coverType">
+						  <option>표지만 따로</option>
+						  <option>내지만 따로</option>
+						  <option>표지내지합본</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('낱장순서');">낱장순서출력</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal" onclick="alert('제본순서');">제본순서출력</button>
+				</div>
+			</div> <!-- /.modal-content -->
+		</div> <!-- /.modal-dialog -->
+	</div>
+</div> <!-- /.modal -->
+<!-- // PDF출력 레이어 ( #gotoPDFModal ) -->
 	
 	
 

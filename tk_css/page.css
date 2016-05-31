@@ -60,6 +60,33 @@
 
 
 
+/*! 중철제본 > 미리보기 */
+.previewWrap{width:100%;overflow:hidden}
+.previewWrap .inner{margin:0 auto;width:1000px;overflow:hidden}
+.previewWrap .controllerSec{position:relative;box-sizing:border-box;width:100%;border:1px solid #ccc}
+.previewWrap .posBtn{position:absolute;top:15px}
+.previewWrap .posBtn button:hover>i{color:#f60}
+.previewWrap .posBtn.prevBtn{left:15px}
+.previewWrap .posBtn.nextBtn{right:15px}
+.previewWrap .previewLabel{padding:15px;text-align:center}
+.previewWrap .previewLabel mark{background:0 0}
+.previewWrap .previewCanvasSec{margin-top:20px;width:100%;overflow:hidden}
+.previewWrap .previewCanvasSec div[class^=cut-]{position:relative;margin:0 auto;width:546px;height:771px;border:1px solid #ccc;background:#f5f5f5}
+.previewWrap .previewCanvasSec div[class^=cut-].cut-2mm .itemPane>img{width:530.88px}
+.previewWrap .previewCanvasSec div[class^=cut-].cut-3mm .itemPane>img{width:523.32px}
+.previewWrap .previewCanvasSec div[class^=cut-].cut-4mm .itemPane>img{width:515.76px}
+.previewWrap .previewCanvasSec div[class^=cut-].cut-5mm .itemPane>img{width:508.2px}
+.previewWrap .previewCanvasSec div[class^=cut-].cut-6mm .itemPane>img{width:500.65px}
+.previewWrap .previewCanvasSec div[class^=cut-].cut-7mm .itemPane>img{width:493.09px}
+.previewWrap .previewCanvasSec div[class^=cut-].cut-8mm .itemPane>img{width:485.53px}
+.previewWrap .previewCanvasSec div[class^=cut-]:hover>div.zoom{display:block}
+.previewWrap .previewCanvasSec div[class^=cut-]>div.zoom{display:none;position:absolute;top:0;left:0;width:100%;height:771px;background:rgba(0,0,0,.5);text-align:center}
+.previewWrap .previewCanvasSec div[class^=cut-]>div.zoom>button{padding-top:321.5px;font-size:32px;color:#fff}
+.previewWrap .previewCanvasSec .itemPane{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.previewWrap .previewCanvasSec .itemPane>img{width:100%;height:auto;border:1px solid #ccc}
+
+
+
 /*! 회원가입영역 */
 .regIdWrap{width:100%;overflow:hidden}
 .regIdWrap .inner{margin:0 auto;width:728px;overflow:hidden}

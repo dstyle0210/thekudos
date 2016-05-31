@@ -1,0 +1,166 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>THEKUDOS</title>
+	<link rel="stylesheet" href="../tk_lib/notosans/notosans.css" />
+	<link rel="stylesheet" href="../tk_lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../tk_lib/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-confirm/jquery-confirm.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-swiper/css/swiper.min.css" />
+	
+	<script src="../tk_lib/jquery/jquery.min.js"></script>
+	<script src="../tk_lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../tk_lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../tk_lib/jquery-confirm/jquery-confirm.min.js"></script>
+	<script src="../tk_lib/jquery-swiper/js/swiper.jquery.min.js"></script>
+	
+	<script src="../tk_js/uploadPaneForm.js"></script><!-- 파일업로드 페이지(동인출판) -->
+	<script src="../tk_js/uploadListForm.js"></script><!-- 파일업로드 리스트(중철제본) -->
+	<script src="../tk_js/commonsLicense.js"></script><!-- 저작권(cc) UI -->
+	
+	<link rel="stylesheet" href="../tk_css/reset.css" />
+	<link rel="stylesheet" href="../tk_css/mod.css" />
+	<link rel="stylesheet" href="../tk_css/layout.css" />
+	<link rel="stylesheet" href="../tk_css/components.css" />
+	<link rel="stylesheet" href="../tk_css/page.css" />
+	<link rel="stylesheet" href="../tk_css/popup.css" />
+	
+</head>
+<body>
+<!-- 
+http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJiEuViK-jAXGAH4qvDJ7zyzck 
+-->
+<!-- http://www.grafolio.com/main.grfl -->
+<div class="wrap">
+	<!-- 로고,헤더 영역 -->
+	<header class="header">
+		<div class="inner">
+			<h1 class="logo">THEKUDOS</h1>
+			
+			<div class="gnb">
+				<div class="btn-group">
+					<a href="../tk_both/index.html" class="btn btn-default">동인통판</a>
+					<a href="../tk_bind/index.html" class="btn btn-primary">중철제본</a>
+				</div>
+			</div>
+			<div class="login">
+				<a href="../tk_util/login.html" class="btn btn-default"><i class="fa fa-power-off"></i></a>
+			</div>
+			
+		</div>
+	</header>
+	<!-- // 로고,헤더 영역 -->
+	
+<!-- 상단베너영역 -->
+<div class="topBnrWrap">
+	<div class="topBnrSec"><a href="#"><img src="../tk_images/temp/@topBnr.gif" alt="" width="728" height="90" /></a></div>
+</div>
+<!-- // 상단베너영역 -->
+
+<!-- 정렬영역 -->
+<div class="listSortWrap">
+	<div class="inner">
+		<div class="leftSec">
+			<h2 class="sortTitle">미리보기</h2>
+		</div>
+		<div class="rightSec">
+			<a href="index.html" class="btn btn-warning"><i class="fa fa-chevron-left" aria-hidden="true"></i> 표지설정</a>
+			<a href="#gotoPDFModal" data-toggle="modal" data-target="#gotoPDFModal" class="btn btn-danger"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF 출력</a>
+		</div>
+	</div>
+</div>
+<!-- // 정렬영역 -->
+
+<!-- 미리보기 -->
+<div class="previewWrap">
+	<div class="inner">
+		
+		<!-- 
+		<p>재단선은 PDF 출력시 투명처리 됩니다.</p>
+		 -->
+		 
+		<!-- 컨트롤러 -->
+		<div class="controllerSec">
+			<div class="posBtn prevBtn"><button><i class="fa fa-chevron-left fa-3x"></i><span class="sr-only">이전</span></button></div>
+			<div class="posBtn nextBtn"><button><i class="fa fa-chevron-right fa-3x"></i><span class="sr-only">다음</span></button></div>
+			<div class="previewLabel">
+				<div class="paging"><mark id="currentPage" class="currentPage" title="현재페이지 위치">3p</mark> / 16p</div>
+				<div class="cutGrid">재단선 8mm</div>
+			</div>
+		</div>
+		<!-- // 컨트롤러 -->
+		
+		<div class="previewCanvasSec" id="previewCanvas">
+			<div class="cut-5mm">
+				<div class="itemPane" id="itemPane">
+					<img src="../tk_images/temp/@item_big.jpg" class="spyLazyImg" alt="" />
+				</div>
+				<div class="zoom"><button onclick="alert('확대');"><i class="fa fa-search-plus fa-4x" aria-hidden="true"></i></button></div>
+			</div> <!-- 재단선기준 : 없음 , 3~8mm -->
+		</div>
+		
+	</div>
+</div>
+<!-- // 미리보기 -->
+	
+	
+
+
+
+
+<!-- PDF출력 레이어 ( #gotoPDFModal ) -->
+<div class="modal fade custom-modal" tabindex="-1" role="dialog" id="gotoPDFModal">
+	<div class="vertical-alignment-helper">
+		<div class="modal-dialog vertical-align-center">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">PDF로 출력하기</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="coverType">표지출력 선택</label>
+						<select class="form-control" id="coverType">
+						  <option>표지만 따로</option>
+						  <option>내지만 따로</option>
+						  <option>표지내지합본</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('낱장순서');">낱장순서출력</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal" onclick="alert('제본순서');">제본순서출력</button>
+				</div>
+			</div> <!-- /.modal-content -->
+		</div> <!-- /.modal-dialog -->
+	</div>
+</div> <!-- /.modal -->
+<!-- // PDF출력 레이어 ( #gotoPDFModal ) -->
+
+
+
+
+
+	<footer class="footer">
+		<div class="inner">
+			<div class="footBtnSec">
+				<a href="#">회사소개</a>
+				<a href="#">개인정보보호정책</a>
+				<a href="#">이용약관</a>
+				<a href="#">광고제휴</a>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+
+</body>
+</html>
+
+
