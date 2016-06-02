@@ -18,8 +18,8 @@
 .itemWrap .itemSec .item-canvas .zzim button i{font-size:24px;color:#fff}
 .itemWrap .itemSec .item-canvas:hover .zzim{-webkit-transition:.5s;transition:.5s;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .itemWrap .itemSec .item-desc{width:227.5px;overflow:hidden}
-.itemWrap .itemSec .item-desc .item-title{display:inline-block;font-size:16px;color:#000}
-.itemWrap .itemSec .item-desc .item-writer{display:inline-block;font-size:14px;color:#90f}
+.itemWrap .itemSec .item-desc .item-title{display:inline-block;display:block;font-size:16px;color:#000}
+.itemWrap .itemSec .item-desc .item-writer{display:inline-block;display:block;font-size:14px;color:#90f}
 .itemWrap .itemSec .item-desc .item-social{text-align:right}
 .itemWrap .itemSec .item-desc .item-social>a{display:inline-block;margin-left:10px}
 
