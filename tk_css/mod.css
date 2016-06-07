@@ -9,3 +9,6 @@
 .vertical-alignment-helper{display:table;width:100%;height:100%;pointer-events:none}
 .vertical-align-center{display:table-cell;vertical-align:middle;pointer-events:none}
 .modal-content{margin:0 auto;width:inherit;height:inherit;pointer-events:all}
+.btn-twitter{background:#55acee;color:#fff}
+.btn-facebook{background:#3b5998;color:#fff}
+hr.gapLine{display:block;margin-top:50px;overflow:hidden;border-top:1px solid #ccc}

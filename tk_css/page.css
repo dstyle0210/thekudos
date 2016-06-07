@@ -13,7 +13,14 @@
 .loginWrap{width:100%;overflow:hidden}
 .loginWrap .inner{margin:0 auto;width:728px;overflow:hidden}
 .loginWrap .findPWbtnSec{padding-top:10px;text-align:right}
-.loginWrap form{margin-top:30px}
+.loginWrap .findPWbtnSec>span{display:inline-block;padding:0 15px;color:#ccc}
+.loginWrap .findPWbtnSec>a{display:inline-block;border-bottom:1px solid #0d87e9;color:#0d87e9}
+.loginWrap form{margin-top:10px}
+.loginWrap .localLogin:after,.loginWrap .localLogin:before{display:table;content:"";line-height:0}
+.loginWrap .localLogin:after{clear:both}
+.loginWrap .localLogin *{margin:0;vertical-align:middle}
+.loginWrap .localLogin .checkbox{float:right}
+.loginWrap .snsLoginWrap{padding-top:20px}
 
 
 
