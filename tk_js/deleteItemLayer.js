@@ -1,0 +1,1 @@
+var deleteItemLayer={open:function(a){$(a).show()},close:function(a){$(a).hide()}};

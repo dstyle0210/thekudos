@@ -42,6 +42,16 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 		<div class="inner">
 			<h1 class="logo">THEKUDOS</h1>
 			
+			<div class="gnb">
+				<div class="btn-group">
+					<a href="../tk_both/index.html" class="btn btn-default">동인통판</a>
+					<a href="../tk_bind/index.html" class="btn btn-default">중철제본</a>
+				</div>
+			</div>
+			<div class="login">
+				<a href="../tk_util/login.html" class="btn btn-default"><i class="fa fa-power-off"></i></a>
+			</div>
+			
 		</div>
 	</header>
 	<!-- // 로고,헤더 영역 -->
@@ -52,49 +62,57 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 </div>
 <!-- // 상단베너영역 -->
 
-<!-- 로그인영역 -->
-<div class="loginWrap">
+<!-- 회원정보변경 -->
+<div class="regEditWrap">
 	<div class="inner">
-		<h2 class="h2">LOGIN</h2>
 		
-		<div class="row snsLoginWrap">
-			<div class="col-xs-6 twitter">
-				<a href="#" class="btn btn-block btn-lg btn-twitter"><i class="fa fa-twitter" aria-hidden="true"></i> 트위터로 로그인</a>
+		<div class="user">
+			<div class="thumb"><img src="../tk_images/temp/@writer.jpg" data-src="../tk_images/temp/@writer.jpg" alt="USERNAME 프로필 사진" class="spyLazyImg" /></div>
+			<div class="change"><button class="btn btn-default">바꾸기</button></div>
+		</div>
+		<div class="basic">
+			<div class="form-group">
+				<label for="userName">회원명</label>
+				<input type="text" class="form-control" id="userName" placeholder="회원명" />
 			</div>
-			<div class="col-xs-6 facebook">
-				<a href="#" class="btn btn-block btn-lg btn-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> 페이스북으로 로그인</a>
+			<div class="form-group">
+				<label for="userURL">개인URL</label>
+				<input type="text" class="form-control" id="userURL" placeholder="개인 홈페이지 or 블로그" />
+			</div>
+			<div class="form-group">
+				<label for="userDesc">소개글</label>
+				<textarea class="form-control" id="userDesc" placeholder="소개글을 입력하세요." style="height:150px;"></textarea>
 			</div>
 		</div>
-		
-		<hr class="gapLine" />
-		
-		<div class="row">
-			<form class="col-xs-12">
+		<div class="addValue">
+			<div class="sec">
 				<div class="form-group">
-					<label for="recipient-name" class="control-label">이메일</label>
-					<input type="text" class="form-control" id="recipient-name" placeholder="이메일 입력">
+					<label for="userName">이메일 </label>
+					<input type="email" class="form-control" id="userName" placeholder="사용중인 이메일을 입력하세요." />
 				</div>
-				<div class="form-group">
-					<label for="message-text" class="control-label">비밀번호</label>
-					<input type="password" class="form-control" id="recipient-name" placeholder="비밀번호입력">
-				</div>
-				<div class="localLogin">
+				<div class="emailOpt">
+					<span class="unconfirm"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 이메일 미인증 <a href="#">인증메일 재발송</a></span>
+					<span class="confirm"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 이메일 인증됨</span>
 					<div class="checkbox">
-						<label for="localLoginUsed"> <input type="checkbox" name="" id="localLoginUsed" /> <span>로그인유지</span></label>
-					</div>
+						<label><input type="checkbox"> 뉴스레터 구독</label>
+					</div>	
 				</div>
-				<p class="btnSec"><a href="#" class="btn btn-primary btn-block">로그인</a></p>
-			</form>
-			<div class="col-xs-12 findPWbtnSec">
-				계정이 없나요? <a href="#">회원가입</a><span> | </span> 비밀번호를 잃어버리셨나요? <a href="#">비밀번호찾기</a>
+			</div>
+			<div class="sec">
+				<div class="form-group">
+					<label for="userName">비밀번호 변경</label>
+					<input type="text" class="form-control" id="userName" placeholder="변경할 비밀번호 입력하세요." />
+				</div>
+				<div class="form-group">
+					<label for="userName">비밀번호 확인</label>
+					<input type="text" class="form-control" id="userName" placeholder="변경할 비밀번호 재입력하세요." />
+				</div>
 			</div>
 		</div>
-		
-		
-		
+		<div class="btnSec"><a href="#" class="btn btn-primary btn-block">회원정보수정</a></div>
 	</div>
 </div>
-<!-- // 로그인영역 -->
+<!-- // 회원정보변경 -->
 	
 
 

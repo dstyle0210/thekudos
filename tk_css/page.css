@@ -94,6 +94,28 @@
 
 
 
+/*! 회원정보수정 */
+.regEditWrap{width:100%;overflow:hidden}
+.regEditWrap .inner{position:relative;margin:0 auto;width:728px;overflow:hidden}
+.regEditWrap input[type=email],.regEditWrap input[type=password],.regEditWrap input[type=text],.regEditWrap textarea{background:#fcfcfc}
+.regEditWrap label{font-size:14px}
+.regEditWrap .user{position:absolute;top:0;left:0;width:160px;height:160px}
+.regEditWrap .user .thumb{width:140px;height:140px;overflow:hidden;border-radius:80px;background:url(../tk_images/common/bg/bgLazyCamera.gif) 50% 50% no-repeat #f5f5f5}
+.regEditWrap .user .thumb>img{width:140px;height:140px;opacity:0}
+.regEditWrap .user .change{padding-top:15px;width:140px;text-align:center}
+.regEditWrap .addValue,.regEditWrap .emailOpt{width:100%;overflow:hidden}
+.regEditWrap .basic{margin-left:160px}
+.regEditWrap .addValue .sec{margin-top:30px}
+.regEditWrap .emailOpt{padding-bottom:15px}
+.regEditWrap .emailOpt i.fa{font-size:17px}
+.regEditWrap .emailOpt .unconfirm{float:left;color:#999}
+.regEditWrap .emailOpt .unconfirm>a{border-bottom:1px solid #0d87e9;color:#0d87e9}
+.regEditWrap .emailOpt .confirm{float:left;color:#333}
+.regEditWrap .emailOpt .checkbox{float:right;margin:0}
+.regEditWrap .emailOpt .checkbox *{margin:0}
+
+
+
 /*! 회원가입영역 */
 .regIdWrap{width:100%;overflow:hidden}
 .regIdWrap .inner{margin:0 auto;width:728px;overflow:hidden}
