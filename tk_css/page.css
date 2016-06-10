@@ -128,15 +128,23 @@
 
 
 /*! 동인통판 > 회원정보 */
+.userLinkWrap .thumb,.userWrap .userArticle .userThumb .thumb{overflow:hidden;background:url(../tk_images/common/bg/bgLazyCamera.gif) 50% 50% no-repeat #f5f5f5}
 .userWrap{width:100%;overflow:hidden}
 .userWrap .inner{margin:0 auto;width:1000px;overflow:hidden}
 .userWrap .userArticle{position:relative;margin-top:20px;padding:20px 0 40px;min-height:200px;width:100%;overflow:hidden}
 .userWrap .userArticle .userThumb{position:absolute;top:0;left:0;width:160px}
 .userWrap .userArticle .userThumb .name{padding-top:10px;width:140px;text-align:center}
-.userWrap .userArticle .userThumb .thumb{width:140px;height:140px;overflow:hidden;border-radius:80px;background:url(../tk_images/common/bg/bgLazyCamera.gif) 50% 50% no-repeat #f5f5f5}
+.userWrap .userArticle .userThumb .thumb{width:140px;height:140px;border-radius:80px}
 .userWrap .userArticle .userThumb .thumb>img{width:140px;height:140px;opacity:0}
 .userWrap .userArticle .userReview{margin-left:160px}
 .userWrap .userArticle .userReview .desc{min-height:125px;font-size:14px}
 .userWrap .userArticle .userReview .desc p{padding-bottom:15px}
 .userWrap .userArticle .userReview .link{text-align:right}
 .userWrap .userArticle .userReview .link>a{color:#0d87e9}
+
+/*! USERPAGE > 회원작품목록  */
+.userLinkWrap{margin-bottom:20px;width:100%;overflow:hidden}
+.userLinkWrap .inner{margin:0 auto;width:1000px;overflow:hidden}
+.userLinkWrap .leftSec>a{margin-right:15px;vertical-align:middle}
+.userLinkWrap .thumb{display:inline-block;width:60px;height:60px;border:1px solid #ccc;border-radius:30px}
+.userLinkWrap .thumb>img{width:60px;height:60px;opacity:0}
