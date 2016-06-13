@@ -82,8 +82,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 				<input type="text" class="form-control" id="recipient-name" placeholder="이메일 입력">
 			</div>
 			<div class="form-group">
-				<label for="recipient-name" class="control-label">닉네임</label>
-				<input type="text" class="form-control" id="recipient-name" placeholder="닉네임 입력">
+				<label for="recipient-name" class="control-label">이름</label>
+				<input type="text" class="form-control" id="recipient-name" placeholder="사이트 내에서는 닉네임이 표시됩니다.">
+			</div>
+			<div class="form-group">
+				<label for="recipient-nick" class="control-label">닉네임</label>
+				<input type="text" class="form-control" id="recipient-nick" placeholder="닉네임 입력">
 			</div>
 			<div class="form-group">
 				<label for="message-text" class="control-label">비밀번호</label>
@@ -93,6 +97,18 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 				<label for="message-text" class="control-label">비밀번호 재확인</label>
 				<input type="password" class="form-control" id="recipient-name" placeholder="비밀번호 재입력">
 			</div>
+			
+			
+<div class="form-group form-captcha">
+	<label for="message-text" class="control-label">자동등록 방지</label>
+	<fieldset id="captcha" class="captcha">
+		<img src="http://localhost:9090/plugin/kcaptcha/kcaptcha_image.php?t=1465793503094" alt="" id="captcha_img">
+		<button type="button" id="captcha_mp3"><span></span>숫자음성듣기</button>
+		<button type="button" id="captcha_reload"><span></span>새로고침</button><input type="text" name="captcha_key" id="captcha_key" required="" class="captcha_box required" size="6" maxlength="6">
+		<span id="captcha_info">자동등록방지 숫자를 순서대로 입력하세요.</span>
+	</fieldset>
+</div>
+			
 			<p class="desc">※ 가입과 동시에 <a href="#">이용약관</a> 과 <a href="#">개인정보보호방침</a> 에 동의합니다.</p>
 			<p class="btnSec"><a href="#" class="btn btn-primary btn-block">회원가입</a></p>
 		</form>
