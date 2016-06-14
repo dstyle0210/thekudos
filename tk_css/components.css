@@ -2,8 +2,10 @@
 /*! Pakage: thekudos make by dstyle(dstyle0210@gmail.com) */
 /*! 작품 아이템 */
 .itemWrap .itemSec .item-canvas,.itemWrap .itemSec .item-upload{overflow:hidden;border:1px solid #ccc;height:321.25px;width:227.5px}
+.itemWrap .itemSec .item-desc .item-title:hover,.itemWrap .itemSec .item-desc .item-writer:hover{text-decoration:underline}
 .itemListWrap{position:relative;width:1029px;overflow:hidden}
 .itemListMoreWrap{text-align:center}
+.itemListMoreWrap .btn-info{background:#004dff}
 .itemWrap{float:left;padding-bottom:29px;width:256.5px}
 .itemWrap .itemNameSec{width:229.5px;height:30px;text-align:center}
 .itemWrap .itemSec{width:229.5px}
@@ -24,7 +26,7 @@
 .itemWrap .itemSec .item-canvas .deleteLayer .deleteSubmitSec .btn{width:74px}
 .itemWrap .itemSec .item-desc{width:227.5px;overflow:hidden}
 .itemWrap .itemSec .item-desc .item-title{display:block;font-size:16px;color:#000}
-.itemWrap .itemSec .item-desc .item-writer{display:block;font-size:14px;color:#90f}
+.itemWrap .itemSec .item-desc .item-writer{display:block;font-size:14px;color:#750787}
 .itemWrap .itemSec .item-desc .item-social{text-align:right}
 .itemWrap .itemSec .item-desc .item-social>a{display:inline-block;margin-left:10px}
 
@@ -40,8 +42,9 @@
 
 
 /*! 댓글 */
+.replyArticle .replyBtnSec .rightSec a:hover,.replyArticle .writer .name>a:hover{text-decoration:underline}
 .replySec{padding-top:40px;width:100%;overflow:hidden}
-.replySec .replyWriteSec h3{font-size:24px}
+.replySec .replyWriteSec h3{font-size:24px;color:#750787}
 .replySec .replyWriteForm{padding-top:10px}
 .replySec .replyWriteForm textarea{padding:15px;width:100%;height:100px;background:#fcfcfc}
 .replySec .replyListSec{padding-top:30px;width:100%;overflow:hidden}
@@ -50,6 +53,7 @@
 .replyArticle .replyReplyListSec,.replyArticle .replyReplyWrite{margin-left:200px;padding-top:15px}
 .replyArticle .writer{position:absolute;top:20px;left:0;width:160px}
 .replyArticle .writer .name{padding-bottom:10px;width:140px;text-align:center}
+.replyArticle .writer .name>a{color:#750787}
 .replyArticle .writer .thumb{width:140px;height:140px;overflow:hidden;border-radius:80px;background:url(../tk_images/common/bg/bgLazyCamera.gif) 50% 50% no-repeat #f5f5f5}
 .replyArticle .writer .thumb>img{width:140px;height:140px;opacity:0}
 .replyArticle .comment{margin-left:200px;min-height:145px}
@@ -59,3 +63,4 @@
 .replyArticle .replyReplyWrite textarea{width:100%;height:100px;background:#fcfcfc}
 .replyArticle .replyReplyListSec .replyReplyArticle{position:relative;padding-bottom:10px;padding-left:25px;width:100%;overflow:hidden}
 .replyArticle .replyReplyListSec .replyReplyArticle>i{position:absolute;top:3px;left:0}
+.replyListMoreSec>button{background:#004dff}

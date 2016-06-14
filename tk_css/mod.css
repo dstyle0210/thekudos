@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*! Pakage: thekudos make by dstyle(dstyle0210@gmail.com) */@charset "utf-8";
+/*! Pakage: thekudos make by dstyle(dstyle0210@gmail.com) */
+
 /*! 캡차 폼요소 커스컴(그누보드 디폴트 수정) */
 .form-captcha *{box-sizing:content-box}
 .form-captcha img{vertical-align:top}
@@ -14,7 +15,8 @@
 .form-captcha #captcha #captcha_key{margin:0 0 0 25px;padding:0 5px;width:70px;height:41px;border:1px solid #b8c9c2;background:#f7f7f7;text-align:center;font-weight:700;font-size:1.333em;line-height:2.8em}
 .form-captcha #captcha #captcha_info{display:block;margin:5px 0 0;letter-spacing:-.1em;font-size:.95em}
 
-@charset "utf-8";#hd_h1,#hd_pop h2,#hd_sch legend{font-size:0;line-height:0;overflow:hidden}
+
+#hd_h1,#hd_pop h2,#hd_sch legend{font-size:0;line-height:0;overflow:hidden}
 #gnb_1dul:after,#hd_wrapper:after,#tnb:after{display:block}
 #text_size button,.btn_cke_sc,a.btn01,a.btn02,a.btn_b01,a.btn_cancel{vertical-align:middle}
 #container:after,#gnb_1dul:after,#hd_wrapper:after,#tnb:after,#wrapper:after,.cke_sc_def dl:after,.new_win .win_ul:after{visibility:hidden;content:"";clear:both}
