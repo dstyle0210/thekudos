@@ -32,6 +32,7 @@
 .listSortWrap .inner{position:relative;margin:0 auto;width:1000px}
 .listSortWrap .inner .sortTitle{height:32px;overflow:hidden;font-weight:700;font-size:32px;color:#333;line-height:32px}
 .listSortWrap .inner .rightSec .btn-primary{background:#004dff}
+.listSortWrap .inner .searchForm{display:inline-block}
 
 
 
