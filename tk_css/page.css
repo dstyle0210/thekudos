@@ -106,7 +106,7 @@
 /*! 회원정보수정 */
 .regEditWrap{width:100%;overflow:hidden}
 .regEditWrap .inner{position:relative;margin:0 auto;width:728px;overflow:hidden}
-.regEditWrap input[type=email],.regEditWrap input[type=password],.regEditWrap input[type=text],.regEditWrap textarea{background:#fcfcfc;font-size:14px}
+.regEditWrap input[type=email],.regEditWrap input[type=password],.regEditWrap input[type=text],.regEditWrap textarea{padding:0 12px;background:#fcfcfc;font-size:14px}
 .regEditWrap label{padding-bottom:5px;font-size:16px}
 .regEditWrap .user{position:absolute;top:0;left:0;width:160px;height:160px}
 .regEditWrap .user .thumb{width:140px;height:140px;overflow:hidden;border-radius:80px;background:url(../tk_images/common/bg/bgLazyCamera.gif) 50% 50% no-repeat #f5f5f5}
