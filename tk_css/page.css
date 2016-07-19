@@ -111,7 +111,8 @@
 .regEditWrap .user{position:absolute;top:0;left:0;width:160px;height:160px}
 .regEditWrap .user .thumb{width:140px;height:140px;overflow:hidden;border-radius:80px;background:url(../tk_images/common/bg/bgLazyCamera.gif) 50% 50% no-repeat #f5f5f5}
 .regEditWrap .user .thumb>img{width:140px;height:140px;opacity:0}
-.regEditWrap .user .change{padding-top:15px;width:140px;text-align:center}
+.regEditWrap .user .change{position:relative;padding-top:15px;width:140px;text-align:center}
+.regEditWrap .user .change input[type=file]{position:absolute;clip:rect(0,0,0,0);margin:-1px;padding:0;width:1px;height:1px;overflow:hidden;border:0}
 .regEditWrap .addValue,.regEditWrap .emailOpt{width:100%;overflow:hidden}
 .regEditWrap .basic{margin-left:160px}
 .regEditWrap .addValue .sec{margin-top:30px}
