@@ -1,0 +1,156 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>THEKUDOS</title>
+	<link rel="stylesheet" href="../tk_lib/notosans/notosans.css" />
+	<link rel="stylesheet" href="../tk_lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../tk_lib/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-confirm/jquery-confirm.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-swiper/css/swiper.min.css" />
+	
+	<script src="../tk_lib/jquery/jquery.min.js"></script>
+	<script src="../tk_lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../tk_lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../tk_lib/jquery-confirm/jquery-confirm.min.js"></script>
+	<script src="../tk_lib/jquery-swiper/js/swiper.jquery.min.js"></script>
+	<script src="../tk_lib/jquery-spyLazyImg/jquery.spyLazyImg.js"></script>
+	
+	<script src="../tk_js/uploadPaneForm.js"></script><!-- 파일업로드 페이지(동인출판) -->
+	<script src="../tk_js/uploadListForm.js"></script><!-- 파일업로드 리스트(중철제본) -->
+	<script src="../tk_js/commonsLicense.js"></script><!-- 저작권(cc) UI -->
+	<script src="../tk_js/deleteItemLayer.js"></script><!-- 작품목록에서 작품삭제(회원작품목록) -->
+	
+	<link rel="stylesheet" href="../tk_css/reset.css" />
+	<link rel="stylesheet" href="../tk_css/mod.css" />
+	<link rel="stylesheet" href="../tk_css/layout.css" />
+	<link rel="stylesheet" href="../tk_css/components.css" />
+	<link rel="stylesheet" href="../tk_css/page.css" />
+	<link rel="stylesheet" href="../tk_css/popup.css" />
+	
+</head>
+<body>
+
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop" style="display:none;">
+    <h2>팝업레이어 알림</h2>
+
+
+    <div id="hd_pops_2" class="hd_pops" style="top:10px;left:10px">
+        <div class="hd_pops_con" style="width:450px;height:500px">
+            <p>test</p>        </div>
+        <div class="hd_pops_footer">
+            <button class="hd_pops_reject hd_pops_2 24"><strong>24</strong>시간 동안 다시 열람하지 않습니다.</button>
+            <button class="hd_pops_close hd_pops_2">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- 
+http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJiEuViK-jAXGAH4qvDJ7zyzck 
+-->
+<!-- http://www.grafolio.com/main.grfl -->
+<div class="wrap">
+	<!-- 로고,헤더 영역 -->
+	<header class="header">
+		<div class="inner">
+			<h1 class="logo">THEKUDOS</h1>
+			
+			<div class="gnb">
+				<div class="btn-group">
+					<a href="../tk_both/index.html" class="btn btn-default">동인통판</a>
+					<a href="../tk_bind/index.html" class="btn btn-default">중철제본</a>
+				</div>
+			</div>
+			<!-- 로긴 이전
+			<div class="login">
+				<a href="../tk_util/login.html" class="btn btn-default"><i class="fa fa-power-off"></i></a>
+			</div>
+			 -->
+			<!-- 로긴 이후 -->
+			<div class="profile">
+				<a href="../tk_user/userView.html" class="thumb"><img src="../tk_images/common/dot.gif" data-src="../tk_images/temp/@writer.jpg" alt="USERNAME 프로필 사진" class="spyLazyImg" /></a>
+				<span href="#" class="name"><a href="../tk_user/userView.html">홍길동</a></span>
+			</div>
+			
+		</div>
+	</header>
+	<!-- // 로고,헤더 영역 -->
+	
+<!-- 상단베너영역 -->
+<div class="topBnrWrap">
+	<div class="topBnrSec"><a href="#"><img src="../tk_images/temp/@topBnr.gif" alt="" width="728" height="90" /></a></div>
+</div>
+<!-- // 상단베너영역 -->
+
+<!-- 회원 본인확인영역 -->
+<div class="loginWrap">
+	<div class="inner">
+		<h2 class="h2">회원 비밀번호확인</h2>
+		
+		<div class="form-notice">
+				<p class="desc">※ 비밀번호를 한번 더 입력해주세요.</p>
+				<p class="desc">※ 회원님의 정보를 안전하게 보호하기 위해 비밀번호를 한번 더 확인합니다.</p>
+			</div>
+		
+		<div class="row">
+			<form class="col-xs-12">
+				<div class="form-group">
+					<label for="confirm-name" class="control-label">회원아이디</label>
+					<input type="text" class="form-control" id="confirm-name" value="test@test.com">
+				</div>
+				<div class="form-group">
+					<label for="confirm-password" class="control-label">비밀번호</label>
+					<input type="password" class="form-control" id="confirm-password" placeholder="비밀번호입력">
+				</div>
+				<p class="btnSec"><a href="#" class="btn btn-primary btn-block">확인</a></p>
+			</form>
+		</div>
+		
+		
+		
+	</div>
+</div>
+<!-- // 회원 본인확인영역 -->
+	
+
+
+	<footer class="footer">
+		<div class="inner">
+			<div class="footBtnSec">
+				<a href="#">회사소개</a>
+				<a href="#">개인정보보호정책</a>
+				<a href="#">이용약관</a>
+				<a href="#">광고제휴</a>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+
+<script>
+/* 레이지로딩 실행 */
+$(window).on("load",function(){
+	$(".spyLazyImg").spyLazyImg({
+		delay:500,
+		load:function(img){
+			// 로딩완료시 실행
+			console.log(img.src+",로딩완료");
+		},
+		error:function(img){
+			// 에러시 실행
+			console.log(img.src+",에러완료");
+		}
+	});
+})
+</script>
+
+
+
+</body>
+</html>
+
+
