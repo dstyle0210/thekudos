@@ -13,15 +13,17 @@
 .header{height:80px;border-bottom:1px solid #ccc;background:#f5f5f5}
 .header .inner{position:relative;margin:0 auto;width:1000px;color:#000}
 .header .logo{position:absolute;top:15px;left:0;margin:0;padding:0;font-weight:700;font-size:28px}
-.header .login,.header .profile{position:absolute;top:20px;right:0}
+.header .login,.header .profile{top:20px;right:0;position:absolute}
 .header .gnb{padding-top:20px;text-align:center}
 .header .gnb .btn-group .btn-primary{background:#750787}
-.header .profile{width:200px;overflow:hidden;text-align:right}
+.header .profile{width:200px;text-align:right}
 .header .profile>*{vertical-align:top}
 .header .profile .thumb{display:inline-block;width:40px;height:40px;overflow:hidden;border:1px solid #ccc;border-radius:20px;background:url(../tk_images/common/bg/bgLazyCamera.gif) 50% 50% no-repeat #f5f5f5}
 .header .profile .thumb>img{width:40px;height:40px;opacity:0}
 .header .profile .name{display:inline-block;padding:8px 0 0 6px;font-size:16px}
 .header .profile .name a{color:#750787}
+.header .profile .mypageLayer{display:none;position:absolute;top:45px;left:80px;box-sizing:border-box;padding:17px 15px 0;width:97px;height:77px;background:url(../tk_images/common/bg/bgMypageLayer.gif) no-repeat;text-align:left}
+.header .profile .mypageLayer a{display:block;padding:3px 0}
 
 
 

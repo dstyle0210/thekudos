@@ -41,7 +41,8 @@
 
     <div id="hd_pops_2" class="hd_pops" style="top:10px;left:10px">
         <div class="hd_pops_con" style="width:450px;height:500px">
-            <p>test</p>        </div>
+            <p>test</p>
+        </div>
         <div class="hd_pops_footer">
             <button class="hd_pops_reject hd_pops_2 24"><strong>24</strong>시간 동안 다시 열람하지 않습니다.</button>
             <button class="hd_pops_close hd_pops_2">닫기</button>
@@ -72,8 +73,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 			 -->
 			<!-- 로긴 이후 -->
 			<div class="profile">
-				<a href="../tk_user/userView.html" class="thumb"><img src="../tk_images/common/dot.gif" data-src="../tk_images/temp/@writer.jpg" alt="USERNAME 프로필 사진" class="spyLazyImg" /></a>
+				<a href="#mypageLayer" class="thumb" onclick="$('#mypageLayer').toggle();return false;"><img src="../tk_images/common/dot.gif" data-src="../tk_images/temp/@writer.jpg" alt="USERNAME 프로필 사진" class="spyLazyImg" /></a>
 				<span href="#" class="name"><a href="../tk_user/userView.html">홍길동</a></span>
+				<div class="mypageLayer" id="mypageLayer">
+					<div><a href="">내 정보 관리</a></div>
+					<div><a href="">로그아웃</a></div>
+				</div>
 			</div>
 			
 		</div>
