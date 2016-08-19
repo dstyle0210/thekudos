@@ -61,6 +61,8 @@
 .replyArticle .replyBtnSec{margin-left:200px}
 .replyArticle .replyReplyWrite{display:none}
 .replyArticle .replyReplyWrite textarea{width:100%;height:100px;background:#fcfcfc}
-.replyArticle .replyReplyListSec .replyReplyArticle{position:relative;padding-bottom:10px;padding-left:25px;width:100%;overflow:hidden}
+.replyArticle .replyReplyListSec .replyReplyArticle{position:relative;padding-bottom:15px;padding-left:25px;width:100%;overflow:hidden}
 .replyArticle .replyReplyListSec .replyReplyArticle>i{position:absolute;top:3px;left:0}
+.replyArticle .replyReplyListSec .replyReplyArticle .replyWriter{display:inline-block;color:#333}
+.replyArticle .replyReplyListSec .replyReplyArticle .replyDate{display:inline-block;margin-left:7px;font-size:11px;color:#999}
 .replyListMoreSec>button{background:#004dff}

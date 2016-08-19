@@ -32,7 +32,7 @@
 .pageAddWrap .pageFormSec .copyrightPreview #label-cp,.pageAddWrap .uploadPaneSec input[type=file]{display:none}
 .pageAddWrap{width:100%;overflow:hidden}
 .pageAddWrap .inner{margin:0 auto;width:1000px;overflow:hidden}
-.pageAddWrap .uploadPaneSec{position:relative;margin:0 auto;width:504px;height:716px;border:1px solid #ccc;background:url(../tk_images/both/bgUploadFile.gif) no-repeat #f5f5f5}
+.pageAddWrap .uploadPaneSec{position:relative;margin:0 auto;width:504px;height:716px;overflow:hidden;border:1px solid #ccc;background:url(../tk_images/both/bgUploadFile.gif) no-repeat #f5f5f5}
 .pageAddWrap .uploadPaneSec .btnUploadFile{position:absolute;top:294px;left:197px}
 .pageAddWrap .uploadPaneSec .btnUploadFile i{font-size:128px}
 .pageAddWrap .uploadPaneSec:hover{background:url(../tk_images/both/bgUploadFileOn.gif) no-repeat #f5f5f5}
