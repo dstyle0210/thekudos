@@ -381,7 +381,12 @@ http://dstyle0210.github.io/papers/dist/papers.html?papers=1IxCBjXu1ax7G_t79BKJi
 	<script>
 	var bindSingleList = new uploadListUi("#uploadPageListWrap",{
 		titleType:"page", // 표지 : cover , 페이지 : page
-		bindType:"single" // 단면 : single , 양면 : double
+		bindType:"single", // 단면 : single , 양면 : double
+		change:function(idx,fileInp,file){
+			console.log(idx);
+			console.log(fileInp);
+			console.log(file);
+		}
 	});
 	// bindSingleList.getFiles(); ==> 파일들 목록을 리턴함.
 	</script>
