@@ -9,8 +9,8 @@
 .itemWrap{float:left;padding-bottom:29px;width:256.5px}
 .itemWrap .itemNameSec{width:229.5px;height:30px;text-align:center}
 .itemWrap .itemSec{width:229.5px}
-.itemWrap .itemSec .item-upload{box-sizing:content-box;background:#f5f5f5}
-.itemWrap .itemSec .item-upload a.btnUploadFile{display:inline-block;margin-top:130px;margin-left:90px}
+.itemWrap .itemSec .item-upload{position:relative;box-sizing:content-box;background:#f5f5f5}
+.itemWrap .itemSec .item-upload a.btnUploadFile{display:inline-block;position:absolute;top:130px;left:90px}
 .itemWrap .itemSec .item-upload input[type=file]{display:none}
 .itemWrap .itemSec .item-canvas{position:relative;box-sizing:content-box}
 .itemWrap .itemSec .item-canvas>img{width:227.5px;height:321.25px}
