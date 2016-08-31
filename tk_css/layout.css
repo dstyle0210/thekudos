@@ -22,7 +22,7 @@
 .header .profile .thumb>img{width:40px;height:40px;opacity:0}
 .header .profile .name{display:inline-block;padding:8px 0 0 6px;font-size:16px}
 .header .profile .name a{color:#750787}
-.header .profile .mypageLayer{display:none;position:absolute;top:45px;left:-26px;box-sizing:border-box;padding:17px 15px 0;width:97px;height:77px;background:url(../tk_images/common/bg/bgMypageLayer.gif) no-repeat;text-align:left}
+.header .profile .mypageLayer{display:none;position:absolute;top:45px;left:-26px;z-index:2;box-sizing:border-box;padding:17px 15px 0;width:97px;height:77px;background:url(../tk_images/common/bg/bgMypageLayer.gif) no-repeat;text-align:left}
 .header .profile .mypageLayer a{display:block;padding:3px 0}
 
 
