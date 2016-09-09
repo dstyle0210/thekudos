@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>THEKUDOS</title>
+	<link rel="stylesheet" href="../tk_lib/notosans/notosans.css" />
+	<link rel="stylesheet" href="../tk_lib/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../tk_lib/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-confirm/jquery-confirm.min.css" />
+	<link rel="stylesheet" href="../tk_lib/jquery-swiper/css/swiper.min.css" />
+</head>
+<body>
+<style>
+.new_win{padding:20px;}
+.new_win *{list-style:none;}
+.new_win h1{font-size:24px;padding:0;margin:0;}
+.reason_title{margin-top:10px;border-top:1px solid #ccc;padding-top:10px;}
+.reason_box li{width:100%;overflow:hidden;}
+.reason_box li .reason_arti_s{float:left;width:50px;font-size:13px;}
+.reason_box li .reason_arti_b{float:left;margin-left:10px;font-size:14px;color:#333;font-weight:700;}
+.reason_box.type-list li{padding-bottom:5px;}
+textarea.form-control{padding:10px;background:#f5f5f5;}
+.win_btn{margin-top:20px;text-align:center;}
+</style>
+
+<div class="new_win">
+
+		<h1 id="win_title">피리 신고하기 PLUS G5</h1>
+
+		<form name="report_do_form" id="report_do_form" action="./do.pop.php" method="post">
+		<input type="hidden" name="mode" value="report_do">
+		<input type="hidden" name="wr_id" value="27">
+		<input type="hidden" name="bo_table" value="tf_board_01">
+		<input type="hidden" name="prog_div_c" value="article">
+
+		<div id="report_do">
+
+			<div class="report_guide">
+				신고하기는 자신과 반대 의견을 표현하는 기능이 아닙니다.<br>
+				허위, 장난, 부문별하게 신고하면 권한이 회수되니 신중이 신고하시기 바랍니다.<br>
+				신고하시면 검토하여 필요하면 삭제, 이동, 회원 제재 조치 합니다.
+			</div>
+
+			<div class="cl_bo space_10px"></div>
+
+
+			<div class="reason_title"></div>
+
+			<div class="reason_box">
+				<ul>
+					<li>
+						<div class="reason_arti_s">구분</div>
+						<div class="reason_arti_b">게시글 신고</div>
+					</li>
+					<li>
+						<div class="reason_arti_s">작성자</div>
+						<div class="reason_arti_b">최고관리자 ( admin )</div>
+					</li>
+					<li>
+						<div class="reason_arti_s">내용</div>
+						<div class="reason_arti_b">TTTT</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cl_bo space_10px"></div>
+
+
+			<div class="reason_title"></div>
+
+			<div class="reason_box type-list">
+				<ul>
+					<li>
+						<input type="radio" name="reason_n" value="1">
+						저작권 위반 포함					</li>
+					<li>
+						<input type="radio" name="reason_n" value="2">
+						공격적 내용 포함					</li>
+					<li>
+						<input type="radio" name="reason_n" value="3">
+						상표권 위반 포함					</li>
+					<li>
+						<input type="radio" name="reason_n" value="4">
+						성인물 포함					</li>
+					<li>
+						<input type="radio" name="reason_n" value="5">
+						개인정보 침해					</li>
+				</ul>
+				<textarea name="report_memo_s" class="form-control"></textarea>
+			</div>
+
+		</div>
+
+		<div class="win_btn">
+				<button type="button" class="btn btn-primary" onclick="this.form.submit();">신고하기</button>
+				<button type="button" class="btn btn-default" onclick="window.close();">창닫기</button>
+		</div>
+
+		</form>
+
+</div>
+
+</body>
+</html>
