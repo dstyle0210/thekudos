@@ -49,7 +49,8 @@
 .pageViewWrap{width:100%;overflow:hidden}
 .pageViewWrap .inner{margin:0 auto;width:1000px;overflow:hidden}
 .pageViewWrap .itemPaneSec{position:relative;margin:0 auto;width:546px;height:771px;overflow:hidden}
-.pageViewWrap .itemPaneSec>img{width:100%;height:auto;border:1px solid #ccc}
+.pageViewWrap .itemPaneSec a{display:inline-block;width:100%;height:auto}
+.pageViewWrap .itemPaneSec a>img{width:100%;height:auto;border:1px solid #ccc}
 .pageViewWrap .itemPaneSec .zzim{display:-webkit-flex;display:flex;position:absolute;bottom:0;left:0;width:100%;height:70px;background:rgba(0,0,0,.5);text-align:right;-webkit-transition:.5s;transition:.5s;-webkit-transform:translate3d(0,70px,0);transform:translate3d(0,70px,0)}
 .pageViewWrap .itemPaneSec .zzim *{vertical-align:top}
 .pageViewWrap .itemPaneSec .zzim button,.pageViewWrap .itemPaneSec .zzim span{display:inline-block;height:70px;text-align:center;-webkit-flex:1;flex:1}
@@ -149,7 +150,7 @@
 .userWrap .inner{margin:0 auto;width:1000px;overflow:hidden}
 .userWrap .userArticle{position:relative;margin-top:20px;padding:20px 0 40px;min-height:200px;width:100%;overflow:hidden}
 .userWrap .userArticle .userThumb{position:absolute;top:0;left:0;width:160px}
-.userWrap .userArticle .userThumb .name{padding-top:10px;width:140px;text-align:center;color:#750787}
+.userWrap .userArticle .userThumb .name{padding-top:10px;width:140px;text-align:center;font-size:16px;color:#750787}
 .userWrap .userArticle .userThumb .thumb{width:140px;height:140px;border-radius:80px}
 .userWrap .userArticle .userThumb .thumb>img{width:140px;height:140px;opacity:0}
 .userWrap .userArticle .userReview{margin-left:160px}
