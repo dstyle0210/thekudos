@@ -50,7 +50,6 @@
 .replySec .replyListSec{padding-top:30px;width:100%;overflow:hidden}
 .replySec .replyListSec>div:last-child{border-bottom:0}
 .replyArticle{position:relative;padding:20px 0;min-height:200px;width:100%;overflow:hidden;border-bottom:1px dashed #ccc}
-.replyArticle .replyReplyListSec,.replyArticle .replyReplyWrite{margin-left:200px;padding-top:15px}
 .replyArticle .writer{position:absolute;top:20px;left:0;width:160px}
 .replyArticle .writer .name{padding-bottom:10px;width:140px;text-align:center}
 .replyArticle .writer .name>a{color:#750787}
@@ -59,6 +58,9 @@
 .replyArticle .comment{margin-left:200px;min-height:145px}
 .replyArticle .comment .writeTime{padding-bottom:10px}
 .replyArticle .replyBtnSec{margin-left:200px}
+.replyArticle .replyReplyCase{position:relative;margin:20px 0 0 180px;min-height:200px}
+.replyArticle .replyReplyListSec,.replyArticle .replyReplyWrite{margin-left:200px;padding-top:15px}
+.replyArticle .replyReplyCase .writer{top:0}
 .replyArticle .replyReplyWrite{display:none}
 .replyArticle .replyReplyWrite textarea{width:100%;height:100px;background:#fcfcfc}
 .replyArticle .replyReplyListSec .replyReplyArticle{position:relative;padding-bottom:15px;padding-left:25px;width:100%;overflow:hidden}
