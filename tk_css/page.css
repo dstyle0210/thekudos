@@ -156,6 +156,7 @@
 .userWrap .userArticle .userReview{margin-left:160px}
 .userWrap .userArticle .userReview .desc{min-height:125px;font-size:14px}
 .userWrap .userArticle .userReview .desc p{padding-bottom:15px}
+.userWrap .userArticle .userReview .desc a{color:#2196f3}
 .userWrap .userArticle .userReview .link{text-align:right}
 .userWrap .userArticle .userReview .link>a{color:#750787}
 
